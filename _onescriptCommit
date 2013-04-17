@@ -2,6 +2,6 @@
 # 2013/04/17 by Monpig
 
 git pull origin master
-git add $1
-git commit -m $2
+git add _*
+git commit -m $1
 git push origin master
