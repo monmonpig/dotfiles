@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+function link {
+	srcfile="$1"
+	destfile="$2"
+	if [ -e $destfile ]; then
+		if [ -n "$($DIFF $srcfile $destfile)" ]; then
+			backup $destfile
+		fi
+	fi
+
+	ln -sfnv $srcfile $destfile
+}
+
