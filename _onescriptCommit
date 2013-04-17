@@ -1,6 +1,7 @@
 # One-script commit
 # 2013/04/17 by Monpig
 
+git pull origin master
 git add $1
 git commit -m $2
 git push origin master
