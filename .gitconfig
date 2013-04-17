@@ -4,8 +4,7 @@
 [user]
     name = Tiffany Wang
     email = monmonpig@gmail.com
+	
 [color]
-    ui = auto
-    diff = auto
-    status = auto
-    branch = auto
+    ui = true
+    editor = vi
