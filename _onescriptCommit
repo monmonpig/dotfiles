@@ -4,6 +4,6 @@
 # add in REMOTE SERVER
 
 git pull origin master
-git add $1
-git commit -m $2
+git add _*
+git commit -m $1
 git push origin master
