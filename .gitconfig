@@ -22,3 +22,6 @@
 	df = diff
 	ada = add -A
 	pushom = push -u origin master
+	reb = rebase -i
+	rebc = rebase --continue
+	reba = rebase --abort
