@@ -3,6 +3,6 @@
 # 2013/04/17 by Monpig
 
 git add -A
-git commit -m $1
-git push -u origin master
+git ct $1
+git pusho
 git st
