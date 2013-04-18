@@ -1,14 +1,33 @@
 #!/usr/bin/env bash
 
-function link {
-	srcfile="$1"
-	destfile="$2"
-	if [ -e $destfile ]; then
-		if [ -n "$($DIFF $srcfile $destfile)" ]; then
-			backup $destfile
-		fi
-	fi
+#function link {
+#	srcfile="$1"
+#	destfile="$2"
+#	if [ -e $destfile ]; then
+#		if [ -n "$($DIFF $srcfile $destfile)" ]; then
+#			backup $destfile
+#		fi
+#	fi
+#
+#	ln -sfnv $srcfile $destfile
+#}
 
-	ln -sfnv $srcfile $destfile
+function backup() {
+	unset count
+		if [ -z $count ]; then
+			backupfile="$1.bak"
+			count=0
+		else
+			backupfile="$1.bak.$count"
+			#the count times to bak
+		fi
+		if [ -r $backupfile ]; then
+			echo "$backupfile exists"
+		else
+			echo "rename to $backupfile for backup."
+			mv $1 $backupfile
+		fi
+		count=`expr $count + 1`
 }
 
+backup $1
