@@ -2,9 +2,21 @@
 # 2013/04/17 by Monpig
 
 [user]
-    name = Tiffany Wang
-    email = monmonpig@gmail.com
+	name = Tiffany Wang
+	email = monmonpig@gmail.com
 	
 [color]
-    ui = true
-    editor = vi
+	ui = true
+
+[core]
+	editor = vim
+
+[merge]
+	tool = vim
+
+[alias]
+	st = status
+	ct = commit -m
+	co = checkout
+	br = branch
+	df = diff
