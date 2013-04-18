@@ -3,6 +3,7 @@
 #Monpig's specific aliases and functions
 alias ls='ls -a'
 alias clr='clear'
+alias rmd='rm -rf'
 export EDITOR="vim"
 
 #Git
