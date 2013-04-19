@@ -6,6 +6,9 @@ alias clr='clear'
 alias rmd='rm -rf'
 export EDITOR="vim"
 
+#Check if TMUX already exist
+test -z "$TMUX" && (tmux attach || tmux new -s Monpig)
+
 #Git
 
 function git_branch {
