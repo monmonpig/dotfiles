@@ -1,5 +1,5 @@
 #!/bin/bash
-# Onei-command commit
+# One-command to push
 # 2013/04/17 by Monpig
 
 git add -A
