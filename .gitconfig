@@ -17,11 +17,12 @@
 [alias]
 	st = status
 	ct = commit -m
+    cta = commit -am
 	co = checkout
 	br = branch
 	df = diff
 	ada = add -A
-	pushom = push -u origin master
+	pushom = push origin master
 	reb = rebase -i
 	rebc = rebase --continue
 	reba = rebase --abort

@@ -4,6 +4,9 @@
 alias ls='ls -a'
 alias clr='clear'
 alias rmd='rm -rf'
+
+#alias for TMUX
+
 export EDITOR="vim"
 
 #Check if TMUX already exist

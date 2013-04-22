@@ -1,5 +1,9 @@
 set t_Co=256
-colorscheme darksea
+set cindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set nu
-syntax on
 
+colorscheme darksea
+syntax on
