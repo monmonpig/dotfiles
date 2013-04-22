@@ -1,9 +1,28 @@
 #!/bin/bash
 
+#Locale
+export LC_ALL="zh_TW.UTF-8"
+export LANG="zh_TW"
+
 #Monpig's specific aliases and functions
-alias ls='ls -a'
 alias clr='clear'
 alias rmd='rm -rf'
+alias grep="grep --color=auto"
+
+#Colorized ls
+DIR=Dx
+SYM_LINK=Gx
+SOCKET=Fx
+PIPE=dx
+EXE=Cx
+BLOCK_SP=Dx
+CHAR_SP=Dx
+EXE_SUID=hb
+EXE_GUID=ad
+DIR_STICKY=Ex
+DIR_WO_STICKY=Ex
+export LSCOLORS="$DIR$SYM_LINK$SOCKET$PIPE$EXE$BLOCK_SP$CHAR_SP$EXE_SUID$EXE_GUID$DIR_STICKY$DIR_WO_STICKY"
+alias ls="ls -G"
 
 #alias for TMUX
 

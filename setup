@@ -1,33 +1,36 @@
 #!/usr/bin/env bash
 
-#function link {
-#	srcfile="$1"
-#	destfile="$2"
-#	if [ -e $destfile ]; then
-#		if [ -n "$($DIFF $srcfile $destfile)" ]; then
-#			backup $destfile
-#		fi
-#	fi
-#
-#	ln -sfnv $srcfile $destfile
-#}
+DIFF=`which diff`
+CWD=`pwd`     
+file_ls=`ls _*`
 
-function backup() {
-	unset count
-		if [ -z $count ]; then
-			backupfile="$1.bak"
-			count=0
-		else
-			backupfile="$1.bak.$count"
-			#the count times to bak
+function link {
+    srcfile="${CWD}/${1}"
+    destfile="$HOME/${1/_/.}"
+	echo "${destfile}"
+    if [ -e $destfile ]; then
+		if [ -n "$($DIFF $srcfile $destfile)" ]; then
+			echo "Difffff"
+            backup $destfile
 		fi
-		if [ -r $backupfile ]; then
-			echo "$backupfile exists"
-		else
-			echo "rename to $backupfile for backup."
-			mv $1 $backupfile
-		fi
-		count=`expr $count + 1`
+	fi
+
+	ln -sfnv $srcfile $destfile
 }
 
-backup $1
+function backup {
+    if [ -r $1 ]; then
+        backupfile="$1.bak"
+        if [ -r $backupfile ]; then
+            rm $backupfile
+        fi
+        mv $1 $backupfile 
+        echo "Backup $1 to $backupfile"   
+    else
+        echo "File $1 doesn't exist."
+    fi 
+}
+
+for file in $file_ls; do
+    link $file
+done
