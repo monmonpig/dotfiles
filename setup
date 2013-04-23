@@ -2,7 +2,9 @@
 
 DIFF=`which diff`
 CWD=`pwd`     
-file_ls=`ls _*`
+file_ls=`ls -d _*`
+
+echo "Change to $CWD";
 
 function link {
     srcfile="${CWD}/${1}"
@@ -10,12 +12,11 @@ function link {
 	echo "${destfile}"
     if [ -e $destfile ]; then
 		if [ -n "$($DIFF $srcfile $destfile)" ]; then
-			echo "Difffff"
             backup $destfile
 		fi
 	fi
 
-	ln -sfnv $srcfile $destfile
+	ln -s $srcfile $destfile
 }
 
 function backup {
