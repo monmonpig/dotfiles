@@ -10,4 +10,7 @@ set expandtab
 set nu
 colorscheme ron
 
+highlight Pmenu guifg=#HEXCODE guibg=#HEXCODE ctermfg=RED ctermbg=YELLOW
+
+
 syntax on 
