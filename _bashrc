@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# welcome msg
+echo "Ooooooh! Hello! (> <)/"
 
 #Locale
 export LC_ALL="zh_TW.UTF-8"

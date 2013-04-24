@@ -8,5 +8,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set nu
+colorscheme ron
 
-syntax on
+syntax on 
