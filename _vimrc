@@ -11,7 +11,11 @@ set nu
 
 colorscheme ron
 
+let g:EasyGrepRecursive = 1
+let g:EasyGrepIgnoreCase= 1
+
 set nocompatible
+set laststatus=2   " Always show the statusline
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -20,5 +24,8 @@ call vundle#rc()
 Bundle 'git://github.com/gmarik/vundle.git'
 Bundle 'git://github.com/vim-scripts/L9.git'
 Bundle 'git://github.com/vim-scripts/FuzzyFinder.git'
+Bundle 'git://github.com/Lokaltog/vim-powerline.git'
+Bundle 'git://github.com/ap/vim-css-color.git'
+Bundle 'git://github.com/vim-scripts/EasyGrep.git'
 
 syntax on

@@ -10,13 +10,12 @@ function link {
     srcfile="${CWD}/${1}"
     destfile="$HOME/${1/_/.}"
 	echo "${destfile}"
-    if [ -e $destfile ]; then
+    if [ -f $destfile ]; then
 		if [ -n "$($DIFF $srcfile $destfile)" ]; then
             backup $destfile
 		fi
+        ln -s $srcfile $destfile
 	fi
-
-	ln -s $srcfile $destfile
 }
 
 function backup {
