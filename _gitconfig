@@ -21,7 +21,8 @@
 	co = checkout
 	br = branch
 	df = diff
-	addu = add -u
+	addu = add -u :/
+    addthis = add -u .
 	pushom = push origin master
 	reb = rebase -i
 	rebc = rebase --continue
