@@ -47,3 +47,5 @@
     coth = checkout Tiffany_th
     copml = checkout Tiffany_pml
 
+[push]
+	default = simple
