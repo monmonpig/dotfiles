@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # welcome msg
-echo "Ooooooh! Hello! (> <)/"
+echo "Ooooooh! Hello! ~~~~~(((/>3<)/"
 
 #Locale
 export LC_ALL="zh_TW.UTF-8"
@@ -14,6 +14,7 @@ export CVSROOT=":pserver:tiffanywang@cvs.skysoft.com.tw:/home/ncvs"
 alias clr='clear'
 alias rmd='rm -rf'
 alias grep="grep --color=auto"
+alias vi='vim'
 
 #Colorized ls
 DIR=Dx

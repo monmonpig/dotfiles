@@ -1,8 +1,3 @@
-set encoding=utf8
-set termencoding=utf8
-set fileencoding=utf8
-set fileencodings=utf8,gb2312,ucs-bom,big5
-
 set cindent
 set tabstop=4
 set shiftwidth=4
@@ -16,10 +11,6 @@ colorscheme ron
 
 "statusline setting                                                                                  
 set ls=2                                                                                              
-set statusline=%4*%<\ %1*[%F]                                                                              
-set statusline+=%4*\ %5*[%{&encoding}, " encoding                                                         
-set statusline+=%{&fileformat}%{\"\".((exists(\"+bomb\")\ &&\ &bomb)?\",BOM\":\"\").\"\"}]%m             
-set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>                                  
 highlight User1 ctermfg=190                                                                                                                                       
 highlight User2 ctermfg=243                                                                                                                                        
 highlight User3 ctermfg=115                                                                                                                                      
@@ -40,8 +31,17 @@ call vundle#rc()
 Bundle 'git://github.com/gmarik/vundle.git'
 Bundle 'git://github.com/vim-scripts/L9.git'
 Bundle 'git://github.com/vim-scripts/FuzzyFinder.git'
-Bundle 'git://github.com/Lokaltog/vim-powerline.git'
 Bundle 'git://github.com/ap/vim-css-color.git'
 Bundle 'git://github.com/vim-scripts/EasyGrep.git'
+
+set fileencodings=utf-8,gb2312,ucs-bom,big5
+set termencoding=utf-8
+set fileencoding=utf-8
+set encoding=utf-8
+
+set statusline=%4*%<\ %1*[%F]                                                                              
+set statusline+=%4*\ %5*%m " encoding                                                         
+set statusline+=%4*%=[%{&encoding},%{&fenc},%{&fileformat}             
+set statusline+=%{\"\".((exists(\"+bomb\")\ &&\ &bomb)?\",BOM\":\"\").\"\"}]\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
 
 syntax on
