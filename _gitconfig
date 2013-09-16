@@ -37,6 +37,7 @@
     mjp = merge Tiffany_jp
     mth = merge Tiffany_th
     mpml = merge Tiffany_pml
+    madm = merge Tiffany_adm
 
     com = checkout master
     cotw = checkout Tiffany_tw
@@ -46,6 +47,7 @@
     cojp = checkout Tiffany_jp
     coth = checkout Tiffany_th
     copml = checkout Tiffany_pml
+    coadm = checkout Tiffany_adm
 
 [push]
 	default = simple

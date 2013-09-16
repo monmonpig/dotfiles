@@ -10,6 +10,9 @@ export LANG="zh_TW"
 #CVS settings
 export CVSROOT=":pserver:tiffanywang@cvs.skysoft.com.tw:/home/ncvs"
 
+#gnupg settings
+export GNUPGHOME="/home/tiffanywang/.gnupg"
+
 #Monpig's specific aliases and functions
 alias clr='clear'
 alias rmd='rm -rf'
