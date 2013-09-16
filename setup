@@ -14,8 +14,8 @@ function link {
 		if [ -n "$($DIFF $srcfile $destfile)" ]; then
             backup $destfile
 		fi
-        ln -s $srcfile $destfile
 	fi
+        ln -s $srcfile $destfile
 }
 
 function backup {
