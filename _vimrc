@@ -7,7 +7,7 @@ set nu
 nmap <F6> :set nu!<BAR>set nu?<CR>
 nmap <F7> :set paste!<BAR>set paste?<CR>
 
-colorscheme ron
+colorscheme desert 
 
 "statusline setting                                                                                  
 set ls=2                                                                                              

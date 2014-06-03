@@ -11,7 +11,7 @@ function link {
     destfile="$HOME/${1/_/.}"
 	echo "${destfile}"
     if [ -f $destfile ]; then
-		if [ -n "$($DIFF $srcfile $destfile)" ]; then
+	    if [ -n "$($DIFF $srcfile $destfile)" ]; then
             backup $destfile
 		fi
 	fi

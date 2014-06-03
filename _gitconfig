@@ -16,7 +16,7 @@
 
 [alias]
 	st = status
-	ct = commit -m
+    ct = commit -m
     cta = commit -am
 	co = checkout
 	br = branch
