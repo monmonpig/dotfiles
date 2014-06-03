@@ -6,6 +6,7 @@ set cursorline
 set nu
 nmap <F6> :set nu!<BAR>set nu?<CR>
 nmap <F7> :set paste!<BAR>set paste?<CR>
+nnoremap <silent> <F5> :NERDTree<CR>
 
 colorscheme desert 
 
@@ -21,18 +22,27 @@ highlight User6 ctermfg=215
 let g:EasyGrepRecursive = 1
 let g:EasyGrepIgnoreCase= 1
 
+"search setting
+set incsearch
+
+" enhanced command completion
+set wildmenu            
+
 set nocompatible
 set laststatus=2   " Always show the statusline
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
 Bundle 'git://github.com/gmarik/vundle.git'
 Bundle 'git://github.com/vim-scripts/L9.git'
 Bundle 'git://github.com/vim-scripts/FuzzyFinder.git'
 Bundle 'git://github.com/ap/vim-css-color.git'
+" super usefull grep tool
 Bundle 'git://github.com/vim-scripts/EasyGrep.git'
+Bundle 'git://github.com/scrooloose/nerdtree.git'
+" enhanced autocomplete
+" Bundle 'git://github.com/othree/vim-autocomplpop.git'    
 
 set fileencodings=utf-8,gb2312,ucs-bom,big5
 set termencoding=utf-8
