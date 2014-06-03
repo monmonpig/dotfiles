@@ -24,6 +24,7 @@ let g:EasyGrepIgnoreCase= 1
 
 "search setting
 set incsearch
+set hlsearch
 
 " enhanced command completion
 set wildmenu            
@@ -43,6 +44,9 @@ Bundle 'git://github.com/vim-scripts/EasyGrep.git'
 Bundle 'git://github.com/scrooloose/nerdtree.git'
 " enhanced autocomplete
 " Bundle 'git://github.com/othree/vim-autocomplpop.git'    
+
+" PHP PSR Fixer
+"Bundle 'git@github.com:stephpy/vim-php-cs-fixer.git'
 
 set fileencodings=utf-8,gb2312,ucs-bom,big5
 set termencoding=utf-8

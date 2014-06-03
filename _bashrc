@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 # welcome msg
-echo "Ooooooh! Hello! ~~~~~(> <)/"
-
+echo "Hello~~~~~~ Fighto!!! (> <)/"
 #Locale
 export LC_ALL="zh_TW.UTF-8"
 export LANG="zh_TW"
