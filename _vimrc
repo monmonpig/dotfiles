@@ -36,9 +36,10 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'git://github.com/gmarik/vundle.git'
-Bundle 'git://github.com/vim-scripts/L9.git'
-Bundle 'git://github.com/vim-scripts/FuzzyFinder.git'
+" Bundle 'git://github.com/vim-scripts/L9.git'
+" Bundle 'git://github.com/vim-scripts/FuzzyFinder.git'
 Bundle 'git://github.com/ap/vim-css-color.git'
+Bundle 'git://github.com/tpope/vim-surround.git'
 " super usefull grep tool
 Bundle 'git://github.com/vim-scripts/EasyGrep.git'
 Bundle 'git://github.com/scrooloose/nerdtree.git'
