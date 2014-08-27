@@ -57,13 +57,13 @@ Bundle 'git://github.com/scrooloose/nerdtree.git'
 "Bundle 'git@github.com:stephpy/vim-php-cs-fixer.git'
 
 " Twig syntax
-Bundle 'git@github.com:evidens/vim-twig.git'
+Bundle 'git://github.com/evidens/vim-twig.git'
 
 " Make " to ', vise vesa
-Bundle 'git@github.com:tpope/vim-surround.git'
+Bundle 'git://github.com/tpope/vim-surround.git'
 
 " CSS coloer
-Bundle 'git@github.com:ap/vim-css-color.git'
+Bundle 'git://github.com/ap/vim-css-color.git'
 
 set fileencodings=utf-8,gb2312,ucs-bom,big5
 set termencoding=utf-8
