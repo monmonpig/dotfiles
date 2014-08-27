@@ -4,11 +4,18 @@ set shiftwidth=4
 set expandtab
 set cursorline
 set nu
+
+"display tab and blank in the end of line
+set listchars=eol:$,tab:>.,trail:~,extends:>,precedes:<
+set list
+
+"hot key
 nmap <F6> :set nu!<BAR>set nu?<CR>
 nmap <F7> :set paste!<BAR>set paste?<CR>
 nnoremap <silent> <F5> :NERDTree<CR>
 
 colorscheme desert 
+
 
 "statusline setting                                                                                  
 set ls=2                                                                                              
