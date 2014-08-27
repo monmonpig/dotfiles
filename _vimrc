@@ -56,6 +56,9 @@ Bundle 'git://github.com/scrooloose/nerdtree.git'
 " PHP PSR Fixer
 "Bundle 'git@github.com:stephpy/vim-php-cs-fixer.git'
 
+" Twig syntax
+Bundle 'git@github.com:evidens/vim-twig.git'
+
 set fileencodings=utf-8,gb2312,ucs-bom,big5
 set termencoding=utf-8
 set fileencoding=utf-8
