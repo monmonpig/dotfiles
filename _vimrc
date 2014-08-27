@@ -62,6 +62,9 @@ Bundle 'git@github.com:evidens/vim-twig.git'
 " Make " to ', vise vesa
 Bundle 'git@github.com:tpope/vim-surround.git'
 
+" CSS coloer
+Bundle 'git@github.com:ap/vim-css-color.git'
+
 set fileencodings=utf-8,gb2312,ucs-bom,big5
 set termencoding=utf-8
 set fileencoding=utf-8
