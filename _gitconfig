@@ -2,52 +2,35 @@
 # 2013/04/17 by Monpig
 
 [user]
-	name = Tiffany Wang
-	email = tiffanywang@kkbox.com 
-	
+    name = Monmon
+    email = monmonpig@gmail.com
 [color]
-	ui = true
+    ui = true
 
 [core]
-	editor = vim
+    editor = vim
 
 [merge]
-	tool = vim
+    tool = vim
 
 [alias]
-	st = status
+    st = status
     ct = commit -m
     cta = commit -am
-	co = checkout
-	br = branch
-	df = diff
-	addu = add -u :/
+    co = checkout
+    br = branch
+    df = diff
+    addu = add -u :/
     addthis = add -u .
-	pushom = push origin master
-	reb = rebase -i
-	rebc = rebase --continue
-	reba = rebase --abort
-    logno = log --name-only 
+    pushom = push origin master
+    reb = rebase -i
+    rebc = rebase --continue
+    reba = rebase --abort
+    logno = log --name-only
 
     mm = merge master
-    mtw = merge Tiffany_tw
-    mhk = merge Tiffany_hk
-    msg = merge Tiffany_sg
-    mmy = merge Tiffany_my
-    mjp = merge Tiffany_jp
-    mth = merge Tiffany_th
-    mpml = merge Tiffany_pml
-    madm = merge Tiffany_adm
 
     com = checkout master
-    cotw = checkout Tiffany_tw
-    cohk = checkout Tiffany_hk
-    cosg = checkout Tiffany_sg
-    comy = checkout Tiffany_my
-    cojp = checkout Tiffany_jp
-    coth = checkout Tiffany_th
-    copml = checkout Tiffany_pml
-    coadm = checkout Tiffany_adm
 
 [push]
-	default = simple
+    default = simple
