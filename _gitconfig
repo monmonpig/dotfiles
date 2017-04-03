@@ -2,10 +2,10 @@
 # 2013/04/17 by Monpig
 
 [user]
-# name = Monmon
-# email = monmonpig@gmail.com
-	name = Monmon
-	email = monmon@dotdev.com.au
+    name = Monmon
+    email = monmonpig@gmail.com
+#	name = Monmon
+#	email = monmon@dotdev.com.au
 [color]
     ui = true
 
