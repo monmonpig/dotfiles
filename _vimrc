@@ -40,30 +40,27 @@ set nocompatible
 set laststatus=2   " Always show the statusline
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'git://github.com/gmarik/vundle.git'
-" Bundle 'git://github.com/vim-scripts/L9.git'
-" Bundle 'git://github.com/vim-scripts/FuzzyFinder.git'
-Bundle 'git://github.com/ap/vim-css-color.git'
-Bundle 'git://github.com/tpope/vim-surround.git'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'git://github.com/gmarik/vundle.git'
+" Plugin 'git://github.com/vim-scripts/L9.git'
+" Plugin 'git://github.com/vim-scripts/FuzzyFinder.git'
+Plugin 'git://github.com/ap/vim-css-color.git'
+Plugin 'git://github.com/tpope/vim-surround.git'
 " super usefull grep tool
-Bundle 'git://github.com/vim-scripts/EasyGrep.git'
-Bundle 'git://github.com/scrooloose/nerdtree.git'
+Plugin 'git://github.com/vim-scripts/EasyGrep.git'
+Plugin 'git://github.com/scrooloose/nerdtree.git'
 " enhanced autocomplete
-" Bundle 'git://github.com/othree/vim-autocomplpop.git'
+" Plugin 'git://github.com/othree/vim-autocomplpop.git'
 
 " PHP PSR Fixer
-"Bundle 'git@github.com:stephpy/vim-php-cs-fixer.git'
+"Plugin 'git@github.com:stephpy/vim-php-cs-fixer.git'
 
 " Twig syntax
-Bundle 'git://github.com/evidens/vim-twig.git'
+Plugin 'git://github.com/evidens/vim-twig.git'
 
-" Make " to ', vise vesa
-Bundle 'git://github.com/tpope/vim-surround.git'
-
-" CSS coloer
-Bundle 'git://github.com/ap/vim-css-color.git'
+call vundle#end()
+filetype plugin indent on
 
 set fileencodings=utf-8,gb2312,ucs-bom,big5
 set termencoding=utf-8
