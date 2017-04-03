@@ -2,8 +2,10 @@
 # 2013/04/17 by Monpig
 
 [user]
-    name = Monmon
-    email = monmonpig@gmail.com
+# name = Monmon
+# email = monmonpig@gmail.com
+	name = Monmon
+	email = monmon@dotdev.com.au
 [color]
     ui = true
 
@@ -34,3 +36,7 @@
 
 [push]
     default = simple
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

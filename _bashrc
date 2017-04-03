@@ -7,7 +7,7 @@ export LC_ALL="zh_TW.UTF-8"
 export LANG="zh_TW"
 
 # composer
-export PATH=$PATH:"/Users/monmonpig/.composer/vendor/bin":
+export PATH=$PATH:"/Applications/MAMP/bin/php/php7.0.0/bin":"/Users/dotdev/bin":"$HOME/.composer/vendor/bin"
 
 #gnupg settings
 export GNUPGHOME="/home/blahblah/.gnupg"
@@ -17,6 +17,9 @@ alias clr='clear'
 alias rmd='rm -rf'
 alias grep="grep --color=auto"
 alias vi='vim'
+alias mysql='/Applications/MAMP/Library/bin/mysql'
+#alias php='/Applications/MAMP/bin/php/php7.0.0/bin/php'
+#alias phpize='/Applications/MAMP/bin/php/php7.0.0/bin/phpize'
 
 #Colorized ls
 DIR=Dx
@@ -41,7 +44,7 @@ alias lsm="\ls | more"
 export EDITOR="vim"
 
 #Check if TMUX already exist
-test -z "$TMUX" && (tmux attach || tmux new -s Monpig)
+# test -z "$TMUX" && (tmux attach || tmux new -s Monpig)
 
 #Git
 
@@ -62,3 +65,10 @@ function git_since_last_commit {
 }
  
 PS1="[\[\033[1;32m\]\w\[\033[0m\]] \[\033[0m\]\[\033[1;36m\]\$(git_branch)\[\033[0;33m\]\$(git_since_last_commit)\[\033[0m\]$ "
+
+export NVM_DIR="/Users/dotdev/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
